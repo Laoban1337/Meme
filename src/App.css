@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+}
+
+main {
+  padding: 36px;
+}
+
+/* .main-container {
+  display: flex;
+  align-items: center; /* Center vertically */
+/* justify-content: center; /* Center horizontally */
+/* height: 100vh; Take up the full viewport height */
+/* } */
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: white;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 999; /* Ensure the header stays on top of other content */
+}
+
+.header--image {
+  height: 100%;
+  margin-right: 6px;
+  width: 35px;
+}
+
+.header--title {
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+.header--project {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 17px;
+  text-align: center;
+}
+
+.inputContainer {
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: 999; /* Ensure inputs stay on top */
+  margin-bottom: 5%;
+}
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  text-indent: 5px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.meme {
+  position: relative;
+}
+
+.meme--image {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+/* .bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+} */
+.saved-memes {
+  box-shadow: 1px 2px 4px 6px #d5d4d8;
+  max-width: 600px;
+  width: 400px;
+  max-height: 600px;
+  height: 600px;
+  background-color: #711f8d;
+  margin-right: 10px; /* Adjust this value as needed */
+  overflow: none;
+  position: absolute; /* Assuming you want it to be positioned relative to its containing element */
+  right: 0; /* Position it flush against the right edge */
+}
+
+.memeContainer {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Horizontally center the container */
+  align-items: center; /* Vertically center the container */
+  height: 100vh; /* Adjust as needed */
+}
+
+.meme {
+  text-align: center; /* Center the contents inside .meme */
+}
+
+.img-container {
+  position: relative; /* Ensure positioning context for absolutely positioned elements */
+}
+
+.meme--image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.meme--text {
+  position: absolute; /* Position the text relative to .img-container */
+  color: white; /* Adjust text color as needed */
+  font-size: 20px; /* Adjust text size as needed */
+  font-family: Arial, sans-serif; /* Adjust font family as needed */
+}
+
+.top {
+  top: 10px; /* Adjust top position as needed */
+}
+
+.bottom {
+  bottom: 10px; /* Adjust bottom position as needed */
+}
+
