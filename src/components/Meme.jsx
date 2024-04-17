@@ -11,7 +11,7 @@ export default function Meme() {
 
   const [editBottomText, setEditBottomText] = useState("");
   //
-  const [responseData, setResponseData] = useState([]);
+
   //setting state for randomMeme
   const [randomMeme, setRandomMeme] = useState([]);
   //state for saving and deleting the memes
@@ -23,17 +23,7 @@ export default function Meme() {
   //setting a loading state
   //   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    fetchMemeData();
-  }, [topText, bottomText]);
-
-  function fetchMemeData() {
-    axios
-      .get("https://api.imgflip.com/get_memes")
-      .then((response) => setResponseData(response.data.data.memes))
-      .catch((err) => console.log(err));
-  }
-
+ 
   function HandleOnChange(event) {
     const { name, value } = event.target;
     console.log(`Input "${name}" changed to value "${value}"`);
