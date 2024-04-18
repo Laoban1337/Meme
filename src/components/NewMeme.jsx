@@ -1,4 +1,5 @@
 import React from "react";
+import "./Components.css"
 
 function NewMeme(props) {
   const { meme, getMemeImage, handleChange, saveMeme } = props;
@@ -6,6 +7,8 @@ function NewMeme(props) {
   return (
     <>
       <div className="form">
+    
+   
         <input
           type="text"
           placeholder="Top text"

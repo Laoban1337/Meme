@@ -1,0 +1,176 @@
+.header {
+  /* background: linear-gradient(45deg, #672280, #9c31c3); */
+  background: #672280;
+  padding: 10px;
+  position: sticky;
+  z-index: 1000;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+.header-right {
+  right: 1vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: white;
+  padding: 20px;
+}
+
+.header--image {
+  height: 100%;
+  margin-right: 6px;
+}
+
+.header--title {
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+.header--project {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding-right: 5rem;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  text-indent: 5px;
+}
+
+.form--button {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.save--button {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.meme {
+  position: relative;
+ 
+}
+
+.meme--image {
+  max-width: 100%;
+  max-height: 50vh;
+  height: auto;
+  border-radius: 3px;
+  z-index: -1;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+.meme--text-bottom{
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+   
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+      -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+      2px 2px 5px #000;
+  }
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+.meme--edit {
+  position: absolute;
+  text-align: center;
+  width: 50%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+  background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
+  border: none; /* No border */
+}
+
+.meme--edit--button {
+  height: 40px;
+  width: 100px;
+  margin: 20px;
+}
+
+.meme--save--button {
+  height: 40px;
+  width: 100px;
+  margin: 20px;
+}
+
+.bottom--edit {
+    position: relative;
+  bottom: 100px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
